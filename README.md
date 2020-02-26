@@ -1,3 +1,5 @@
+# This repository still is a work in progress! More analysis to come soon!
+
 # StockX Regression Project
 StockX.com is a website where sellers can resell exotic/limited quantity shoes. Many of these shoes sell for much higher than their initial retail price. StockX operates much like a stock market exchange with bid and ask prices displayed.
 

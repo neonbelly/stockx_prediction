@@ -20,7 +20,11 @@ I removed certain shoe sizes that were too sparse in my data and considered chil
 After splitting the data into training and test sets, I initially attempted to model with a simple linear regression, which was not capturing the higher last sale prices. In order to counteract this, I generated polynomial features with the independent variables and ran a LASSO model on these variables with an alpha of 0.01. This is the regularization strength that allows the model to select the more relevant features based on a cost function. Using the polynomial features with a LASSO model, I was able to improve the explained variance in my model without overfitting. Lastly I built a Random Forest which had the best performance of the models at the cost of losing some interpretability.
 
 ## Linear Model Residuals
-![](images/Picture2.png)
+![](images/simplelinear.png)
 
 ## LASSO Model Residuals
-![](images/Picture3.png)
+![](images/lasso.png)
+
+## Random Forest Model Residuals & Feature Importances
+![](images/randomforest.png)
+![](images/FeatureImportanceGraph.png)

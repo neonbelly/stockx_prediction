@@ -7,7 +7,7 @@ StockX.com is a website where sellers can resell exotic/limited quantity shoes. 
 In this investigation, I collect StockX.com shoe data such as initial retail price, release date of shoe, brand, shoe size, number of sales, etc (independent variables) to predict the last sale price (dependent variable). I chose the last sale price rather than the bid or ask prices because it is a better replication of the true value of the shoe. For instance, some shoes with large bid/ask spreads have asks that are too high to actually be sold. Some independent variables such as shoe size are critical to collect due to the price varying based on the supply/demand of that shoe size. More information can be found: https://stockx.com/news/the-stockx-data-guide-to-resale/ 
 
 # Webscraping
-Utilizing the requests and BeautifulSoup library, I was able to scrape and parse 2863 StockX.com listings. I was able to collect key features such as size, release date, retail price, number of sales, brand, color, etc.
+Utilizing the requests and BeautifulSoup library, I was able to scrape and parse 2863 StockX.com listings. I was able to collect key features such as size, release date, retail price, number of sales, brand, color, etc. One must be cognizant of the rate limit on this page and should implement a try-except with a time.sleep() on except.
 
 ![](images/Picture4.png)
 

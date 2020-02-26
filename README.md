@@ -7,8 +7,18 @@ In this investigation, I collect StockX.com shoe data such as initial retail pri
 # Webscraping
 Utilizing the requests and BeautifulSoup library, I was able to scrape and parse 2863 StockX.com listings. I was able to collect key features such as size, release date, retail price, number of sales, brand, color, etc.
 
+![](images/Picture4.png)
+
 # Data Cleaning and Feature Engineering
 I removed certain shoe sizes that were too sparse in my data and considered children shoe sizes to be one combined size. Then I used each shoe size as a dummy variable (meaning a variable that is coded as 0 or 1 depending if the observation is that category). I also was able to extract whether the shoe was celebrity enddorsed from the name of the shoe. Release date was changed to days since release to work with the regression models. I removed shoes with too high of a premium as they could potentially skew the model.
 
+![](images/Picture1.png)
+
 # Modeling
 After splitting the data into training and test sets, I initially attempted to model with a simple linear regression, which was not capturing the higher last sale prices. In order to counteract this, I generated polynomial features with the independent variables and ran a LASSO model on these variables with an alpha of 0.01. This is the regularization strength that allows the model to select the more relevant features based on a cost function. Using the polynomial features with a LASSO model, I was able to improve the explained variance in my model without overfitting. Lastly I built a Random Forest which had the best performance of the models at the cost of losing some interpretability.
+
+## Linear Model Residuals
+![](images/Picture2.png)
+
+## LASSO Model Residuals
+![](images/Picture3.png)

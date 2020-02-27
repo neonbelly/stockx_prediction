@@ -1,7 +1,14 @@
-# This repository still is a work in progress! More analysis to come soon!
-
 # StockX Regression Project
-StockX.com is a website where sellers can resell exotic/limited quantity shoes. Many of these shoes sell for much higher than their initial retail price. StockX operates much like a stock market exchange with bid and ask prices displayed.
+## Purpose
+StockX.com is a website where sellers can resell exotic/limited quantity shoes. Many of these shoes sell for much higher than their initial retail price. StockX operates much like a stock market exchange with bid and ask prices displayed. Identifying key features relevant to pricing the shoes is conceptually interesting and applicable if one were to look for undervalued shoes.
+
+## Technologies Used:
+* BeautifulSoup and Requests (Webscraping)
+* Seaborn (Visualization)
+* scikit-learn (Modeling)
+
+## Data Sources:
+StockX.com
 
 # Motivation
 In this investigation, I collect StockX.com shoe data such as initial retail price, release date of shoe, brand, shoe size, number of sales, etc (independent variables) to predict the last sale price (dependent variable). I chose the last sale price rather than the bid or ask prices because it is a better replication of the true value of the shoe. For instance, some shoes with large bid/ask spreads have asks that are too high to actually be sold. Some independent variables such as shoe size are critical to collect due to the price varying based on the supply/demand of that shoe size. More information can be found: https://stockx.com/news/the-stockx-data-guide-to-resale/ 
